@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_red"
+    tools:context=".LabTour">
+
+    <TextView
+        android:id="@+id/cpuConf"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginHorizontal="20dp"
+        android:gravity="center"
+        android:justificationMode="inter_word"
+        android:text="Aplicativo para apresentação dos laboratórios de computação do UNISAGRADO"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="225dp"
+        android:src="@drawable/telework_pana"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/shape_container"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view">
+
+        <Button
+            android:id="@+id/btnSobreUNISAGRADO"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginVertical="10dp"
+            android:backgroundTint="@color/dark_red"
+            android:text="Sobre o UNISAGRADO"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:cornerRadius="50dp" />
+
+        <Button
+            android:id="@+id/btnLaboratorios"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginVertical="10dp"
+            android:backgroundTint="@color/dark_red"
+            android:text="Laboratórios"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:cornerRadius="50dp" />
+
+        <Button
+            android:id="@+id/btnCreditos"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginVertical="10dp"
+            android:backgroundTint="@color/dark_red"
+            android:text="Créditos"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:cornerRadius="50dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
