@@ -3,6 +3,7 @@ package com.example.labtour;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -13,7 +14,7 @@ import android.widget.Button;
 
 public class Referencias extends AppCompatActivity {
 
-    private Button btnImagem1, btnImagem3, btnImagemCPU, btnImagemRAM, btnImagemHD, btnImagemGPU, btnBalancoSocial, btnSobreUNISAGRADO;
+    private CardView cardTelaUm, cardTelaTres, cardCPU, cardMemoriaRAM, cardHD, cardGPU, cardBalancoSocial, cardSobreUNISAGRADO;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,16 +27,16 @@ public class Referencias extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowTitleEnabled(true);
 
-        btnImagem1 = findViewById(R.id.btnImagem1);
-        btnImagem3 = findViewById(R.id.btnImagem3);
-        btnImagemCPU = findViewById(R.id.btnImagemCPU);
-        btnImagemRAM = findViewById(R.id.btnImagemRAM);
-        btnImagemHD = findViewById(R.id.btnImagemHD);
-        btnImagemGPU = findViewById(R.id.btnImagemGPU);
-        btnBalancoSocial = findViewById(R.id.btnBalancoSocial);
-        btnSobreUNISAGRADO = findViewById(R.id.btnSobreUNISAGRADO);
+        cardTelaUm = findViewById(R.id.cardTelaUm);
+        cardTelaTres = findViewById(R.id.cardTelaTres);
+        cardCPU = findViewById(R.id.cardCPU);
+        cardMemoriaRAM = findViewById(R.id.cardMemoriaRAM);
+        cardHD = findViewById(R.id.cardHD);
+        cardGPU = findViewById(R.id.cardGPU);
+        cardBalancoSocial = findViewById(R.id.cardBalancoSocial);
+        cardSobreUNISAGRADO = findViewById(R.id.cardSobreUNISAGRADO);
 
-        btnImagem1.setOnClickListener(new View.OnClickListener() {
+        cardTelaUm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String url = "https://storyset.com/illustration/telework/pana";
@@ -45,7 +46,7 @@ public class Referencias extends AppCompatActivity {
             }
         });
 
-        btnImagem3.setOnClickListener(new View.OnClickListener() {
+        cardTelaTres.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String url = "https://storyset.com/illustration/shared-workspace/pana";
@@ -55,7 +56,7 @@ public class Referencias extends AppCompatActivity {
             }
         });
 
-        btnImagemCPU.setOnClickListener(new View.OnClickListener() {
+        cardCPU.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String url = "https://br.freepik.com/vetores-gratis/conceito-moderno-de-hospedagem-com-design-plano_3378458.htm#page=3&query=processador%20cartoon&position=34&from_view=search&track=ais";
@@ -65,7 +66,7 @@ public class Referencias extends AppCompatActivity {
             }
         });
 
-        btnImagemRAM.setOnClickListener(new View.OnClickListener() {
+        cardMemoriaRAM.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String url = "https://br.freepik.com/vetores-gratis/modern-cpu-colecao-com-design-plano_3317258.htm#query=hard%20drive&position=13&from_view=search&track=ais";
@@ -75,7 +76,7 @@ public class Referencias extends AppCompatActivity {
             }
         });
 
-        btnImagemHD.setOnClickListener(new View.OnClickListener() {
+        cardHD.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String url = "https://www.flaticon.com/free-icon/hard-disk_861621?term=hard+drive&page=4&position=9&origin=search&related_id=861621";
@@ -85,7 +86,7 @@ public class Referencias extends AppCompatActivity {
             }
         });
 
-        btnImagemGPU.setOnClickListener(new View.OnClickListener() {
+        cardGPU.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String url = "https://www.flaticon.com/free-icon/gpu_8900415?term=graphic+card&page=1&position=5&origin=tag&related_id=8900415";
@@ -95,7 +96,7 @@ public class Referencias extends AppCompatActivity {
             }
         });
 
-        btnBalancoSocial.setOnClickListener(new View.OnClickListener() {
+        cardBalancoSocial.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String url = "https://unisagrado.edu.br/site/conteudo/12630-unisagrado-apresenta-balanco-social-2021.html";
@@ -105,7 +106,7 @@ public class Referencias extends AppCompatActivity {
             }
         });
 
-        btnSobreUNISAGRADO.setOnClickListener(new View.OnClickListener() {
+        cardSobreUNISAGRADO.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String url = "https://unisagrado.edu.br/institucional/quem-somos";

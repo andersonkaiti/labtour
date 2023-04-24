@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/dark_white"
     tools:context=".Referencias">
 
     <androidx.appcompat.widget.Toolbar
@@ -19,237 +19,420 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbarReferencias">
 
-        <ScrollView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical" >
+                android:layout_height="135dp"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
 
-                <LinearLayout
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardTelaUm"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:layout_height="125dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="25dp">
 
-                    <Button
-                        android:id="@+id/btnImagem1"
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="65dp"
-                        android:layout_marginHorizontal="20dp"
-                        android:backgroundTint="@color/dark_red"
-                        android:text="Imagem da 1ª tela"
-                        android:textColor="@color/white"
-                        android:textSize="24sp"
-                        android:textStyle="bold"
-                        app:cornerRadius="50dp" />
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/creditosWork"
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:layout_marginHorizontal="20dp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:justificationMode="inter_word"
-                        android:text="Work illustrations by Storyset"
-                        android:textColor="@color/dark_red"
-                        android:textSize="24sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
+                        <TextView
+                            android:id="@+id/telaUmTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/dark_red"
+                            android:gravity="center"
+                            android:text="IMAGEM DA PRIMEIRA TELA"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            app:cardCornerRadius="25dp" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/refTelaUm"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Work illustrations by Storyset"
+                            android:textColor="@color/dark_red"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
 
-                    <Button
-                        android:id="@+id/btnImagem3"
-                        android:layout_width="match_parent"
-                        android:layout_height="65dp"
-                        android:layout_marginHorizontal="20dp"
-                        android:backgroundTint="@color/dark_red"
-                        android:text="Imagem da 3ª tela"
-                        android:textColor="@color/white"
-                        android:textSize="24sp"
-                        android:textStyle="bold"
-                        app:cornerRadius="50dp" />
-
-                    <TextView
-                        android:id="@+id/creditosPeople"
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:layout_marginHorizontal="20dp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:justificationMode="inter_word"
-                        android:text="People illustrations by Storyset"
-                        android:textColor="@color/dark_red"
-                        android:textSize="24sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <Button
-                        android:id="@+id/btnImagemCPU"
-                        android:layout_width="match_parent"
-                        android:layout_height="65dp"
-                        android:layout_marginHorizontal="20dp"
-                        android:backgroundTint="@color/dark_red"
-                        android:text="Imagem da CPU"
-                        android:textColor="@color/white"
-                        android:textSize="24sp"
-                        android:textStyle="bold"
-                        app:cornerRadius="50dp" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <Button
-                        android:id="@+id/btnImagemRAM"
-                        android:layout_width="match_parent"
-                        android:layout_height="65dp"
-                        android:layout_marginHorizontal="20dp"
-                        android:backgroundTint="@color/dark_red"
-                        android:text="Imagem da Memória"
-                        android:textColor="@color/white"
-                        android:textSize="24sp"
-                        android:textStyle="bold"
-                        app:cornerRadius="50dp" />
-
-                    <TextView
-                        android:id="@+id/creditosFreepik2"
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:layout_marginHorizontal="20dp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:justificationMode="inter_word"
-                        android:text="Imagem de Freepik"
-                        android:textColor="@color/dark_red"
-                        android:textSize="24sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <Button
-                        android:id="@+id/btnImagemHD"
-                        android:layout_width="match_parent"
-                        android:layout_height="65dp"
-                        android:layout_marginHorizontal="20dp"
-                        android:backgroundTint="@color/dark_red"
-                        android:text="Imagem do HD"
-                        android:textColor="@color/white"
-                        android:textSize="24sp"
-                        android:textStyle="bold"
-                        app:cornerRadius="50dp" />
-
-                    <TextView
-                        android:id="@+id/creditosMaximBasinskiPremium"
-                        android:layout_width="match_parent"
-                        android:layout_height="55dp"
-                        android:layout_marginHorizontal="20dp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:justificationMode="inter_word"
-                        android:text="Hard disk icons created by Maxim Basinski Premium - Flaticon"
-                        android:textColor="@color/dark_red"
-                        android:textSize="24sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <Button
-                        android:id="@+id/btnImagemGPU"
-                        android:layout_width="match_parent"
-                        android:layout_height="65dp"
-                        android:layout_marginHorizontal="20dp"
-                        android:backgroundTint="@color/dark_red"
-                        android:text="Imagem da GPU"
-                        android:textColor="@color/white"
-                        android:textSize="24sp"
-                        android:textStyle="bold"
-                        app:cornerRadius="50dp" />
-
-                    <TextView
-                        android:id="@+id/creditosTaufikRamadhan"
-                        android:layout_width="match_parent"
-                        android:layout_height="60dp"
-                        android:layout_marginHorizontal="20dp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:justificationMode="inter_word"
-                        android:text="Graphic card icons created by Taufik Ramadhan - Flaticon"
-                        android:textColor="@color/dark_red"
-                        android:textSize="24sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <Button
-                        android:id="@+id/btnBalancoSocial"
-                        android:layout_width="match_parent"
-                        android:layout_height="65dp"
-                        android:layout_marginHorizontal="20dp"
-                        android:backgroundTint="@color/dark_red"
-                        android:text="Balanço Social 2021"
-                        android:textColor="@color/white"
-                        android:textSize="24sp"
-                        android:textStyle="bold"
-                        app:cornerRadius="50dp" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <Button
-                        android:id="@+id/btnSobreUNISAGRADO"
-                        android:layout_width="match_parent"
-                        android:layout_height="65dp"
-                        android:layout_marginHorizontal="20dp"
-                        android:backgroundTint="@color/dark_red"
-                        android:text="Sobre UNISAGRADO"
-                        android:textColor="@color/white"
-                        android:textSize="24sp"
-                        android:textStyle="bold"
-                        app:cornerRadius="50dp" />
-
-                </LinearLayout>
-
+                </androidx.cardview.widget.CardView>
             </LinearLayout>
-        </ScrollView>
 
-    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardTelaTres"
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="25dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/telaTresTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/dark_red"
+                            android:gravity="center"
+                            android:text="IMAGEM DA SEGUNDA TELA"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            app:cardCornerRadius="25dp" />
+
+                        <TextView
+                            android:id="@+id/refTelaTres"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="People illustrations by Storyset"
+                            android:textColor="@color/dark_red"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardCPU"
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="25dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/imageCPU"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/dark_red"
+                            android:gravity="center"
+                            android:text="IMAGEM DA CPU"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            app:cardCornerRadius="25dp" />
+
+                        <TextView
+                            android:id="@+id/refCPU"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Imagem de Freepik"
+                            android:textColor="@color/dark_red"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardMemoriaRAM"
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="25dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/imageMemoriaRAM"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/dark_red"
+                            android:gravity="center"
+                            android:text="IMAGEM DA MEMÓRIA RAM"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            app:cardCornerRadius="25dp" />
+
+                        <TextView
+                            android:id="@+id/refMemoriaRAM"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Imagem de Freepik"
+                            android:textColor="@color/dark_red"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="185dp"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardHD"
+                    android:layout_width="match_parent"
+                    android:layout_height="175dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="25dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/imageHD"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/dark_red"
+                            android:gravity="center"
+                            android:text="IMAGEM DO HD"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            app:cardCornerRadius="25dp" />
+
+                        <TextView
+                            android:id="@+id/refHD"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Hard disk icons created by Maxim Basinski Premium - Flaticon"
+                            android:textColor="@color/dark_red"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardGPU"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="25dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/imageGPU"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/dark_red"
+                            android:gravity="center"
+                            android:text="IMAGEM DA GPU"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            app:cardCornerRadius="25dp" />
+
+                        <TextView
+                            android:id="@+id/refGPU"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Graphic card icons created by Taufik Ramadhan - Flaticon"
+                            android:textColor="@color/dark_red"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardBalancoSocial"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="25dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/imageBalancoSocial"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/dark_red"
+                            android:gravity="center"
+                            android:text="TEXTO DA TELA DE REDE"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            app:cardCornerRadius="25dp" />
+
+                        <TextView
+                            android:id="@+id/refBalancoSocial"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Balanço Social 2021 feito no UNISAGRADO"
+                            android:textColor="@color/dark_red"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="80dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardSobreUNISAGRADO"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="25dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/imageSobreUNISAGRADO"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/dark_red"
+                            android:gravity="center"
+                            android:text="TEXTO E IMAGEM DA TELA\nSOBRE O UNISAGRADO"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            app:cardCornerRadius="25dp" />
+
+                        <TextView
+                            android:id="@+id/refSobreUNISAGRADO"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Sobre Nós do site do UNISAGRADO"
+                            android:textColor="@color/dark_red"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

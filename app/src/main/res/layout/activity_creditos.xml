@@ -19,22 +19,109 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/creditos"
+    <LinearLayout
+        android:id="@+id/linearLayout5"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginHorizontal="20dp"
-        android:layout_weight="1"
+        android:layout_height="135dp"
         android:gravity="center"
-        android:justificationMode="inter_word"
-        android:text="DESENVOLVEDORES\nAnderson Kaiti\nKevin Lopes de Morais\n\nPROFESSOR ORIENTADOR\nProf. Dr. Elvio Gilberto da Silva"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        android:textStyle="bold"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarCreditos">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDesenvolvedores"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_marginHorizontal="20dp"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="25dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/desenvolvedoresTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/dark_red"
+                    android:gravity="center"
+                    android:text="DESENVOLVEDORES"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:cardCornerRadius="25dp" />
+
+                <TextView
+                    android:id="@+id/desenvolvedores"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Anderson Kaiti\nKevin Lopes de Morais"
+                    android:textColor="@color/dark_red"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:gravity="center"
+        android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/imageLogoUNISAGRADO"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbarCreditos" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardOrientador"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginHorizontal="20dp"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="25dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/orientadorTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/dark_red"
+                    android:gravity="center"
+                    android:text="PROFESSOR ORIENTADOR"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:cardCornerRadius="25dp" />
+
+                <TextView
+                    android:id="@+id/refOrientador"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Prof. Dr. Elvio Gilberto da Silva"
+                    android:textColor="@color/dark_red"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
 
     <ImageView
         android:id="@+id/imageLogoUNISAGRADO"
@@ -44,7 +131,7 @@
         app:layout_constraintBottom_toTopOf="@+id/btnReferencias"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/creditos"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
         app:srcCompat="@drawable/logo_unisagrado" />
 
     <Button
@@ -61,5 +148,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageLogoUNISAGRADO" />
+        app:layout_constraintTop_toBottomOf="@+id/imageLogoUNISAGRADO" />
 </androidx.constraintlayout.widget.ConstraintLayout>

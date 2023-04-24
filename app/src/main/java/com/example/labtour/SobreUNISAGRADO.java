@@ -38,7 +38,6 @@ public class SobreUNISAGRADO extends AppCompatActivity {
             }
         });
     }
-
     @Override
     public boolean onContextItemSelected(@NonNull MenuItem item) {
         if (item.getItemId()==android.R.id.home) {
