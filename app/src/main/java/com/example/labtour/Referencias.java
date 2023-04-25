@@ -14,7 +14,7 @@ import android.widget.Button;
 
 public class Referencias extends AppCompatActivity {
 
-    private CardView cardTelaUm, cardTelaTres, cardCPU, cardMemoriaRAM, cardHD, cardGPU, cardBalancoSocial, cardSobreUNISAGRADO;
+    private CardView cardTelaUm, cardTelaTres, cardCPU, cardMemoriaRAM, cardHD, cardGPU, cardMonitor, cardBalancoSocial, cardSobreUNISAGRADO;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +33,7 @@ public class Referencias extends AppCompatActivity {
         cardMemoriaRAM = findViewById(R.id.cardMemoriaRAM);
         cardHD = findViewById(R.id.cardHD);
         cardGPU = findViewById(R.id.cardGPU);
+        cardMonitor = findViewById(R.id.cardMonitor);
         cardBalancoSocial = findViewById(R.id.cardBalancoSocial);
         cardSobreUNISAGRADO = findViewById(R.id.cardSobreUNISAGRADO);
 
@@ -79,7 +80,8 @@ public class Referencias extends AppCompatActivity {
         cardHD.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String url = "https://www.flaticon.com/free-icon/hard-disk_861621?term=hard+drive&page=4&position=9&origin=search&related_id=861621";
+                // String url = "https://www.flaticon.com/free-icon/hard-disk_861621?term=hard+drive&page=4&position=9&origin=search&related_id=861621";
+                String url = "https://www.flaticon.com/free-icons/hard-disk";
                 Intent linkImagemHD = new Intent(Intent.ACTION_VIEW);
                 linkImagemHD.setData(Uri.parse(url));
                 startActivity(linkImagemHD);
@@ -89,10 +91,22 @@ public class Referencias extends AppCompatActivity {
         cardGPU.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String url = "https://www.flaticon.com/free-icon/gpu_8900415?term=graphic+card&page=1&position=5&origin=tag&related_id=8900415";
+                // String url = "https://www.flaticon.com/free-icon/gpu_8900415?term=graphic+card&page=1&position=5&origin=tag&related_id=8900415";
+                String url = "https://www.flaticon.com/free-icons/graphic-card";
                 Intent linkImagemGPU = new Intent(Intent.ACTION_VIEW);
                 linkImagemGPU.setData(Uri.parse(url));
                 startActivity(linkImagemGPU);
+            }
+        });
+
+        cardMonitor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // String url = "https://www.flaticon.com/free-icon/tv_896280?term=monitor&related_id=896280";
+                String url = "https://www.flaticon.com/free-icons/screen";
+                Intent linkImagemMonitor = new Intent(Intent.ACTION_VIEW);
+                linkImagemMonitor.setData(Uri.parse(url));
+                startActivity(linkImagemMonitor);
             }
         });
 
