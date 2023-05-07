@@ -38,7 +38,7 @@
         android:layout_height="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.55" />
+        app:layout_constraintVertical_bias="0.44" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -51,41 +51,133 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view">
 
-        <Button
-            android:id="@+id/btnSobreUNISAGRADO"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:layout_marginVertical="10dp"
-            android:backgroundTint="@color/dark_red"
-            android:text="Sobre o UNISAGRADO"
-            android:textColor="@color/white"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            app:cornerRadius="50dp" />
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/btnLaboratorios"
-            android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:layout_marginVertical="10dp"
-            android:backgroundTint="@color/dark_red"
-            android:text="Laboratórios"
-            android:textColor="@color/white"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            app:cornerRadius="50dp" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardUNISAGRADO"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:cardCornerRadius="25dp">
 
-        <Button
-            android:id="@+id/btnCreditos"
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/dark_red"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageUNISAGRADO"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1.5"
+                        app:srcCompat="@drawable/unisagrado" />
+
+                    <TextView
+                        android:id="@+id/textUNISAGRADO"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@color/dark_red"
+                        android:gravity="center"
+                        android:text="SOBRE O\nUNISAGRADO"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:layout_marginVertical="10dp"
-            android:backgroundTint="@color/dark_red"
-            android:text="Créditos"
-            android:textColor="@color/white"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            app:cornerRadius="50dp" />
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardLabtoratorios"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:cardCornerRadius="25dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/dark_red"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageLaboratorios"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1.5"
+                        app:srcCompat="@drawable/computador" />
+
+                    <TextView
+                        android:id="@+id/textLaboratorios"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@color/dark_red"
+                        android:gravity="center"
+                        android:text="LABORATÓRIOS"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardCreditos"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:cardCornerRadius="25dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/dark_red"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageCreditos"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_marginVertical="10dp"
+                        android:layout_weight="1.5"
+                        app:srcCompat="@drawable/creditos" />
+
+                    <TextView
+                        android:id="@+id/textCreditos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@color/dark_red"
+                        android:gravity="center"
+                        android:text="CRÉDITOS"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

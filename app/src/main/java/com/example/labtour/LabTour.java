@@ -1,6 +1,7 @@
 package com.example.labtour;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,18 +10,18 @@ import android.widget.Button;
 
 public class LabTour extends AppCompatActivity {
 
-    private Button btnSobreUNISAGRADO, btnLaboratorios, btnCreditos;
+    private CardView cardUNISAGRADO, cardLabtoratorios, cardCreditos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_labtour);
 
-        btnSobreUNISAGRADO = findViewById(R.id.btnSobreUNISAGRADO);
-        btnLaboratorios = findViewById(R.id.btnLaboratorios);
-        btnCreditos = findViewById(R.id.btnCreditos);
+        cardUNISAGRADO = findViewById(R.id.cardUNISAGRADO);
+        cardLabtoratorios = findViewById(R.id.cardLabtoratorios);
+        cardCreditos = findViewById(R.id.cardCreditos);
 
-        btnSobreUNISAGRADO.setOnClickListener(new View.OnClickListener() {
+        cardUNISAGRADO.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent telaSobreUNISAGRADO = new Intent(LabTour.this, SobreUNISAGRADO.class);
@@ -28,7 +29,7 @@ public class LabTour extends AppCompatActivity {
             }
         });
 
-        btnLaboratorios.setOnClickListener(new View.OnClickListener() {
+        cardLabtoratorios.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent telaLaboratorios = new Intent(LabTour.this, Laboratorios.class);
@@ -36,7 +37,7 @@ public class LabTour extends AppCompatActivity {
             }
         });
 
-        btnCreditos.setOnClickListener(new View.OnClickListener() {
+        cardCreditos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent telaCreditos = new Intent(LabTour.this, Creditos.class);
