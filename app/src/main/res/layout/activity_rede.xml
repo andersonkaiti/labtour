@@ -92,7 +92,7 @@
                             android:gravity="center_vertical"
                             android:justificationMode="inter_word"
                             android:paddingHorizontal="10dp"
-                            android:text="  São 16 laboratórios de computação equipados com 600 computadores, e rede de computadores ethernet cat6, utilizando como plataformas os sistemas operacionais de rede família Windows Server, Linux e Windows 10 Professional."
+                            android:text="São 16 laboratórios de computação equipados com 600 computadores, e rede de computadores ethernet cat6, utilizando como plataformas os sistemas operacionais de rede família Windows Server, Linux e Windows 10 Professional."
                             android:textAlignment="viewStart"
                             android:textColor="@color/white"
                             android:textSize="22sp" />
@@ -160,7 +160,7 @@
                             android:gravity="center_vertical"
                             android:justificationMode="inter_word"
                             android:paddingHorizontal="10dp"
-                            android:text="  Contam ainda com ambientes nas principais Clouds (Google, Microsoft, Amazon e Oracle) que auxiliam e garantem a estrutura necessária para o ensino a distância de qualidade e o desenvolvimento de outros conteúdos permitidos para o ensino presencial."
+                            android:text="Contam ainda com ambientes nas principais Clouds (Google, Microsoft, Amazon e Oracle) que auxiliam e garantem a estrutura necessária para o ensino a distância de qualidade e o desenvolvimento de outros conteúdos permitidos para o ensino presencial."
                             android:textAlignment="viewStart"
                             android:textColor="@color/white"
                             android:textSize="22sp" />
