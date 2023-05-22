@@ -14,7 +14,7 @@ import android.widget.ScrollView;
 
 public class Laboratorios extends AppCompatActivity {
 
-    private CardView cardRede, cardConfiguracoes;
+    private CardView cardRede, cardConfiguracoes, cardTermos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +32,7 @@ public class Laboratorios extends AppCompatActivity {
 
         cardConfiguracoes = findViewById(R.id.cardConfiguracoes);
         cardRede = findViewById(R.id.cardRede);
+        cardTermos = findViewById(R.id.cardTermos);
         cardConfiguracoes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -45,6 +46,14 @@ public class Laboratorios extends AppCompatActivity {
             public void onClick(View v) {
                 Intent telaRede = new Intent(Laboratorios.this, Rede.class);
                 startActivity(telaRede);
+            }
+        });
+
+        cardTermos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent telaTermos = new Intent(Laboratorios.this, Termos.class);
+                startActivity(telaTermos);
             }
         });
     }
