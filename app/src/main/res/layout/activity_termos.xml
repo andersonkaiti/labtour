@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/dark_white"
     tools:context=".Termos">
 
     <androidx.appcompat.widget.Toolbar
@@ -45,7 +46,6 @@
                         android:id="@+id/titleNormasGerais"
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
-                        android:background="@color/white"
                         android:gravity="center"
                         android:paddingHorizontal="10dp"
                         android:text="NORMASGERAIS"
@@ -76,7 +76,6 @@
                         android:id="@+id/titleNormasEspecificas"
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
-                        android:background="@color/white"
                         android:gravity="center"
                         android:paddingHorizontal="10dp"
                         android:text="NORMAS ESPECÍFICAS"
