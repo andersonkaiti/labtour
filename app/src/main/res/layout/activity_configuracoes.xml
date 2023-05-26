@@ -20,6 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
+        android:id="@+id/scrollViewConfiguracoes"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -33,55 +34,62 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
                 android:gravity="center"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardCPU"
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="5dp"
                     android:backgroundTint="@color/white"
                     app:cardCornerRadius="25dp">
 
-                    <TextView
-                        android:id="@+id/cpuTitle"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="20dp"
-                        android:layout_weight="1"
-                        android:background="@color/dark_red"
-                        android:text="PROCESSADOR"
-                        android:textAlignment="center"
-                        android:textColor="@color/white"
-                        android:textSize="24sp"
-                        android:textStyle="bold"
-                        app:cardCornerRadius="25dp" />
-
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="100dp"
-                        android:layout_marginTop="40dp"
-                        android:gravity="center_vertical">
-
-                        <ImageView
-                            android:id="@+id/cpu"
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
-                            android:layout_marginLeft="10dp"
-                            app:srcCompat="@drawable/cpu_2" />
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/cpuConf"
-                            android:layout_width="wrap_content"
+                            android:id="@+id/cpuTitle"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginHorizontal="10dp"
-                            android:layout_weight="1"
-                            android:text="Core i5-7500T 2,7GHz"
-                            android:textColor="@color/dark_red"
+                            android:background="@color/dark_red"
+                            android:paddingVertical="10dp"
+                            android:text="PROCESSADOR"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
                             android:textSize="24sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            app:cardCornerRadius="25dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingVertical="10dp"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:id="@+id/cpu"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginLeft="10dp"
+                                app:srcCompat="@drawable/cpu_2" />
+
+                            <TextView
+                                android:id="@+id/cpuConf"
+                                android:layout_width="wrap_content"
+                                android:layout_height="75dp"
+                                android:gravity="center"
+                                android:layout_marginHorizontal="10dp"
+                                android:text="Core i5 12ª Geração"
+                                android:textColor="@color/dark_red"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
@@ -89,55 +97,62 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
                 android:gravity="center"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardGPU"
                     android:layout_width="match_parent"
-                    android:layout_height="125dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="5dp"
                     android:backgroundTint="@color/white"
                     app:cardCornerRadius="25dp">
-
-                    <TextView
-                        android:id="@+id/gpuTitle"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="20dp"
-                        android:layout_weight="1"
-                        android:background="@color/dark_red"
-                        android:text="PLACA DE VÍDEO"
-                        android:textAlignment="center"
-                        android:textColor="@color/white"
-                        android:textSize="24sp"
-                        android:textStyle="bold"
-                        app:cardCornerRadius="25dp" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginTop="35dp"
-                        android:gravity="center_vertical">
-
-                        <ImageView
-                            android:id="@+id/gpu"
-                            android:layout_width="125dp"
-                            android:layout_height="75dp"
-                            android:layout_marginLeft="10dp"
-                            app:srcCompat="@drawable/gpu" />
+                        android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/gpuConf"
-                            android:layout_width="wrap_content"
+                            android:id="@+id/gpuTitle"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginHorizontal="10dp"
-                            android:layout_weight="1"
-                            android:text="GeForce GT 710 1GB"
-                            android:textColor="@color/dark_red"
+                            android:background="@color/dark_red"
+                            android:paddingVertical="10dp"
+                            android:text="PLACA DE VÍDEO"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
                             android:textSize="24sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            app:cardCornerRadius="25dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingVertical="10dp"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:id="@+id/gpu"
+                                android:layout_width="125dp"
+                                android:layout_height="75dp"
+                                android:layout_marginLeft="10dp"
+                                app:srcCompat="@drawable/gpu" />
+
+                            <TextView
+                                android:id="@+id/gpuConf"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_weight="1"
+                                android:text="ATI Radeon 550 2GB"
+                                android:textColor="@color/dark_red"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
@@ -145,55 +160,62 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
                 android:gravity="center"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardHD"
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="5dp"
                     android:backgroundTint="@color/white"
                     app:cardCornerRadius="25dp">
-
-                    <TextView
-                        android:id="@+id/hdTitle"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="20dp"
-                        android:layout_weight="1"
-                        android:background="@color/dark_red"
-                        android:text="ARMAZENAMENTO"
-                        android:textAlignment="center"
-                        android:textColor="@color/white"
-                        android:textSize="24sp"
-                        android:textStyle="bold"
-                        app:cardCornerRadius="25dp" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginTop="35dp"
-                        android:gravity="center_vertical">
-
-                        <ImageView
-                            android:id="@+id/hd"
-                            android:layout_width="75dp"
-                            android:layout_height="100dp"
-                            android:layout_marginLeft="10dp"
-                            app:srcCompat="@drawable/hard_drive" />
+                        android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/hdConf"
-                            android:layout_width="wrap_content"
+                            android:id="@+id/hdTitle"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginHorizontal="10dp"
-                            android:layout_weight="1"
-                            android:text="HD 500GB"
-                            android:textColor="@color/dark_red"
+                            android:paddingVertical="10dp"
+                            android:background="@color/dark_red"
+                            android:text="ARMAZENAMENTO"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
                             android:textSize="24sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            app:cardCornerRadius="25dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingVertical="10dp"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:id="@+id/hd"
+                                android:layout_width="75dp"
+                                android:layout_height="100dp"
+                                android:layout_marginLeft="10dp"
+                                app:srcCompat="@drawable/hard_drive" />
+
+                            <TextView
+                                android:id="@+id/hdConf"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_marginHorizontal="10dp"
+                                android:text="256GB SSD NVME"
+                                android:textColor="@color/dark_red"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
@@ -201,55 +223,63 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
                 android:gravity="center"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardRAM"
                     android:layout_width="match_parent"
-                    android:layout_height="125dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="5dp"
                     android:backgroundTint="@color/white"
                     app:cardCornerRadius="25dp">
-
-                    <TextView
-                        android:id="@+id/ramTitle"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="20dp"
-                        android:layout_weight="1"
-                        android:background="@color/dark_red"
-                        android:text="MEMÓRIA RAM"
-                        android:textAlignment="center"
-                        android:textColor="@color/white"
-                        android:textSize="24sp"
-                        android:textStyle="bold"
-                        app:cardCornerRadius="25dp" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginTop="35dp"
-                        android:gravity="center_vertical">
-
-                        <ImageView
-                            android:id="@+id/ram"
-                            android:layout_width="125dp"
-                            android:layout_height="50dp"
-                            android:layout_marginLeft="10dp"
-                            app:srcCompat="@drawable/ram_memory" />
+                        android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/ramConf"
-                            android:layout_width="wrap_content"
+                            android:id="@+id/ramTitle"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginHorizontal="10dp"
-                            android:layout_weight="1"
-                            android:text="16GB"
-                            android:textColor="@color/dark_red"
+                            android:background="@color/dark_red"
+                            android:paddingVertical="10dp"
+                            android:text="MEMÓRIA RAM"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
                             android:textSize="24sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            app:cardCornerRadius="25dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingVertical="10dp"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:id="@+id/ram"
+                                android:layout_width="125dp"
+                                android:layout_height="50dp"
+                                android:layout_marginLeft="10dp"
+                                app:srcCompat="@drawable/ram_memory" />
+
+                            <TextView
+                                android:id="@+id/ramConf"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_weight="1"
+                                android:text=" 8GB DDR4"
+                                android:textColor="@color/dark_red"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
@@ -257,55 +287,62 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="20dp"
                 android:gravity="center"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/cardRAM"
+                    android:id="@+id/cardMonitores"
                     android:layout_width="match_parent"
-                    android:layout_height="125dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="5dp"
                     android:backgroundTint="@color/white"
                     app:cardCornerRadius="25dp">
-
-                    <TextView
-                        android:id="@+id/monitoresTitle"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="20dp"
-                        android:layout_weight="1"
-                        android:background="@color/dark_red"
-                        android:text="MONITORES"
-                        android:textAlignment="center"
-                        android:textColor="@color/white"
-                        android:textSize="24sp"
-                        android:textStyle="bold"
-                        app:cardCornerRadius="25dp" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginTop="35dp"
-                        android:gravity="center_vertical">
-
-                        <ImageView
-                            android:id="@+id/monitores"
-                            android:layout_width="125dp"
-                            android:layout_height="100dp"
-                            android:layout_marginLeft="10dp"
-                            app:srcCompat="@drawable/tv" />
+                        android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/ramConf"
-                            android:layout_width="wrap_content"
+                            android:id="@+id/monitoresTitle"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginHorizontal="10dp"
-                            android:layout_weight="1"
-                            android:text="19"
-                            android:textColor="@color/dark_red"
+                            android:background="@color/dark_red"
+                            android:paddingVertical="10dp"
+                            android:text="MONITORES"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
                             android:textSize="24sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            app:cardCornerRadius="25dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingVertical="10dp"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:id="@+id/monitores"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginLeft="10dp"
+                                app:srcCompat="@drawable/tv" />
+
+                            <TextView
+                                android:id="@+id/monitoresConf"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_marginHorizontal="10dp"
+                                android:text="19 polegadas"
+                                android:textColor="@color/dark_red"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>

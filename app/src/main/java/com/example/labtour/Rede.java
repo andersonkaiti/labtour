@@ -6,6 +6,7 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.ScrollView;
 
 public class Rede extends AppCompatActivity {
 
@@ -15,17 +16,9 @@ public class Rede extends AppCompatActivity {
         setContentView(R.layout.activity_rede);
 
         Toolbar toolbar = findViewById(R.id.toolbarRede);
+        ToolbarConf.iniciarToolbar(this, toolbar);
 
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowTitleEnabled(true);
-    }
-
-    @Override
-    public boolean onContextItemSelected(@NonNull MenuItem item) {
-        if (item.getItemId()==android.R.id.home) {
-            finish();
-        }
-        return super.onContextItemSelected(item);
+        ScrollView scrollView = findViewById(R.id.scrollViewRede);
+        scrollView.setVerticalScrollBarEnabled(true);
     }
 }

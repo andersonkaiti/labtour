@@ -20,10 +20,7 @@ public class Creditos extends AppCompatActivity {
         setContentView(R.layout.activity_creditos);
 
         Toolbar toolbar = findViewById(R.id.toolbarCreditos);
-
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowTitleEnabled(true);
+        ToolbarConf.iniciarToolbar(this, toolbar);
 
         btnReferencias = findViewById(R.id.btnReferencias);
 
@@ -34,13 +31,5 @@ public class Creditos extends AppCompatActivity {
                 startActivity(telaReferencias);
             }
         });
-    }
-
-    @Override
-    public boolean onContextItemSelected(@NonNull MenuItem item) {
-        if (item.getItemId()==android.R.id.home) {
-            finish();
-        }
-        return super.onContextItemSelected(item);
     }
 }

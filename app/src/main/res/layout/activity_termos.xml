@@ -9,7 +9,7 @@
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbarTermos"
-        android:layout_width="409dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/dark_red"
         android:minHeight="?attr/actionBarSize"
@@ -20,6 +20,7 @@
         app:title="TERMOS" />
 
     <ScrollView
+        android:id="@+id/scrollViewTermos"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -48,7 +49,7 @@
                         android:layout_height="60dp"
                         android:gravity="center"
                         android:paddingHorizontal="10dp"
-                        android:text="NORMASGERAIS"
+                        android:text="NORMAS GERAIS"
                         android:textColor="@color/dark_red"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -59,7 +60,7 @@
                         android:layout_height="match_parent"
                         android:justificationMode="inter_word"
                         android:paddingHorizontal="10dp"
-                        android:paddingVertical="10dp"
+                        android:paddingBottom="10dp"
                         android:text="No laboratório somente é permitida a presença de pessoas devidamente vinculadas ao UNISAGRADO\n\nO laboratório só poderá ser utilizado para fins acadêmicos, no desenvolvimento de atividades relacionadas ao ensino, pesquisa e extensão\n\nA coordenação do laboratório não se responsabiliza pelos pertences dos estudantes, inclusive os esquecidos nas máquinas\n\nUtilize seu próprio login e senha para uso dos computadores (obter com a Coordenação dos Laboratórios)\n\nInstalação de software, hardware ou jogos, apenas quando autorizada pela Coordenação dos Laboratórios de Informática ou Grupo de Tecnologia\n\nÉ necessário conhecimento prévio e noções básicas para manipulação dos equipamentos de tecnologia deste laboratório\n\nÉ proibida a retirada de quaisquer equipamentos do Laboratório sem a expressa autorização\n\nÉ vedado o consumo de comidas, bebidas e tabaco nas dependências do laboratório"
                         android:textAlignment="viewStart"
                         android:textColor="@color/dark_red"
@@ -89,7 +90,7 @@
                         android:layout_height="match_parent"
                         android:justificationMode="inter_word"
                         android:paddingHorizontal="10dp"
-                        android:paddingVertical="10dp"
+                        android:paddingBottom="10dp"
                         android:text="Funcionamento de segunda a sábado, adequando se aos períodos de utilização dos cursos, horário das aulas e desenvolvimento das atividades acadêmicas\n\nÉ proibido o uso de computadores e outros equipamentos por estudantes não autorizados\n\nA internet é permitida apenas para fins acadêmicos (e jamais particulares)\n\nÉ necessário informar Login e Senha, obtidos junto a Coordenação dos Laboratórios\n\nA intencional quebra da segurança ou acesso a conteúdo indevido é monitorada, podendo o usuário ter suas credenciais bloqueadas imediatamente\n\nDesligar todos os equipamentos após o uso\n\nAo término das atividades, apresentar equipamentos e mesas em perfeito estado de limpeza e conservação ao responsável do laboratório\n\nEste ambiente está constantemente sendo monitorado por vídeo"
                         android:textAlignment="viewStart"
                         android:textColor="@color/dark_red"

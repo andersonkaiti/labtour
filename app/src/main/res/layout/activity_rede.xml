@@ -19,161 +19,165 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageImagem3"
-        android:layout_width="wrap_content"
-        android:layout_height="180dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayoutRede"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/shared_workspace_pana" />
-
-    <View
-        android:id="@+id/viewRede"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.29" />
-
-    <LinearLayout
-        android:id="@+id/linearLayoutRede"
+    <ScrollView
+        android:id="@+id/scrollViewRede"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="@drawable/shape_container_dark_white"
-        android:orientation="vertical"
-        android:paddingHorizontal="20dp"
-        android:paddingVertical="20dp"
+        android:layout_weight="1"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/viewRede">
+        app:layout_constraintTop_toBottomOf="@+id/toolbarRede">
 
-        <ScrollView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageImagem3"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                app:srcCompat="@drawable/shared_workspace_pana" />
 
             <LinearLayout
+                android:id="@+id/linearLayoutRede"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" >
+                android:background="@drawable/shape_container_dark_white"
+                android:orientation="vertical"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="20dp">
 
-                <androidx.cardview.widget.CardView
+                <ScrollView
                     android:layout_width="match_parent"
-                    android:layout_height="340dp"
-                    android:layout_marginBottom="20dp"
-                    android:backgroundTint="@color/dark_red"
-                    app:cardCornerRadius="25dp">
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-                        <TextView
-                            android:id="@+id/RedeSOTitle"
+                        <androidx.cardview.widget.CardView
                             android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:background="@color/white"
-                            android:paddingHorizontal="10dp"
-                            android:text="REDE | SISTEMA OPERACIONAL"
-                            android:textColor="@color/dark_red"
-                            android:textStyle="bold"
-                            android:textSize="20sp" />
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:backgroundTint="@color/dark_red"
+                            app:cardCornerRadius="25dp">
 
-                        <TextView
-                            android:id="@+id/textRedeSO"
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/RedeSOTitle"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/white"
+                                    android:gravity="center"
+                                    android:paddingHorizontal="10dp"
+                                    android:paddingVertical="20dp"
+                                    android:text="REDE | SISTEMA OPERACIONAL"
+                                    android:textColor="@color/dark_red"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/textRedeSO"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:justificationMode="inter_word"
+                                    android:paddingHorizontal="10dp"
+                                    android:paddingVertical="20dp"
+                                    android:text="São 16 laboratórios de computação equipados com 600 computadores, e rede de computadores ethernet cat6, utilizando como plataformas os sistemas operacionais de rede família Windows Server, Linux e Windows 10 Professional."
+                                    android:textAlignment="viewStart"
+                                    android:textColor="@color/white"
+                                    android:textSize="22sp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingBottom="20dp"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/imageView2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="60dp"
+                                        android:layout_weight="1"
+                                        app:tint="@android:color/white"
+                                        app:srcCompat="@drawable/ethernet" />
+
+                                    <ImageView
+                                        android:id="@+id/imageView3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="60dp"
+                                        android:layout_weight="1"
+                                        app:tint="@android:color/white"
+                                        app:srcCompat="@drawable/logotipo_do_windows" />
+
+                                    <ImageView
+                                        android:id="@+id/imageView4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="60dp"
+                                        android:layout_weight="1"
+                                        app:tint="@android:color/white"
+                                        app:srcCompat="@drawable/linux" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
                             android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="4.5"
-                            android:gravity="center_vertical"
-                            android:justificationMode="inter_word"
-                            android:paddingHorizontal="10dp"
-                            android:text="São 16 laboratórios de computação equipados com 600 computadores, e rede de computadores ethernet cat6, utilizando como plataformas os sistemas operacionais de rede família Windows Server, Linux e Windows 10 Professional."
-                            android:textAlignment="viewStart"
-                            android:textColor="@color/white"
-                            android:textSize="22sp" />
+                            android:layout_height="340dp"
+                            android:backgroundTint="@color/dark_red"
+                            app:cardCornerRadius="25dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/CloudsTitle"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/white"
+                                    android:gravity="center"
+                                    android:paddingHorizontal="10dp"
+                                    android:paddingVertical="20dp"
+                                    android:text="CLOUDS"
+                                    android:textColor="@color/dark_red"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/textClouds"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:justificationMode="inter_word"
+                                    android:paddingHorizontal="10dp"
+                                    android:paddingVertical="20dp"
+                                    android:text="Contam ainda com ambientes nas principais Clouds (Google, Microsoft, Amazon e Oracle) que auxiliam e garantem a estrutura necessária para o ensino a distância de qualidade e o desenvolvimento de outros conteúdos permitidos para o ensino presencial."
+                                    android:textAlignment="viewStart"
+                                    android:textColor="@color/white"
+                                    android:textSize="22sp" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
 
                     </LinearLayout>
+                </ScrollView>
 
-                </androidx.cardview.widget.CardView>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/imageView2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="75dp"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/ethernet" />
-
-                    <ImageView
-                        android:id="@+id/imageView3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="75dp"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/logotipo_do_windows" />
-
-                    <ImageView
-                        android:id="@+id/imageView4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="75dp"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/linux" />
-                </LinearLayout>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="340dp"
-                    android:backgroundTint="@color/dark_red"
-                    app:cardCornerRadius="25dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/CloudsTitle"
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="1"
-                            android:background="@color/white"
-                            android:gravity="center"
-                            android:paddingHorizontal="10dp"
-                            android:text="CLOUDS"
-                            android:textColor="@color/dark_red"
-                            android:textSize="20sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/textClouds"
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="4.5"
-                            android:gravity="center_vertical"
-                            android:justificationMode="inter_word"
-                            android:paddingHorizontal="10dp"
-                            android:text="Contam ainda com ambientes nas principais Clouds (Google, Microsoft, Amazon e Oracle) que auxiliam e garantem a estrutura necessária para o ensino a distância de qualidade e o desenvolvimento de outros conteúdos permitidos para o ensino presencial."
-                            android:textAlignment="viewStart"
-                            android:textColor="@color/white"
-                            android:textSize="22sp" />
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
 
             </LinearLayout>
-        </ScrollView>
 
-
-
-    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,11 +10,27 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ScrollView;
 
 public class Laboratorios extends AppCompatActivity {
 
-    private CardView cardRede, cardConfiguracoes, cardTermos;
+    int[] imageIds = {
+            R.id.cardSala1,
+            R.id.cardSala2,
+            R.id.cardSala3,
+            R.id.cardSala4,
+    };
+
+    int[] cardIds = {
+            R.id.cardConfiguracoes,
+            R.id.cardRede,
+            R.id.cardTermos
+    };
+
+    LinearLayout[] image = new LinearLayout[imageIds.length];
+    CardView[] cards = new CardView[cardIds.length];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,47 +38,49 @@ public class Laboratorios extends AppCompatActivity {
         setContentView(R.layout.activity_laboratorios);
 
         Toolbar toolbar = findViewById(R.id.toolbarLaboratorios);
+        ToolbarConf.iniciarToolbar(this, toolbar);
 
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowTitleEnabled(true);
+        for(int i = 0; i < imageIds.length; i++) {
+            image[i] = findViewById(imageIds[i]);
+            image[i].setOnClickListener(new Laboratorios.LaboratoriosClickListener());
+        };
 
-        ScrollView scrollview = findViewById(R.id.scrollviewLab);
-        scrollview.setVerticalScrollBarEnabled(true);
-
-        cardConfiguracoes = findViewById(R.id.cardConfiguracoes);
-        cardRede = findViewById(R.id.cardRede);
-        cardTermos = findViewById(R.id.cardTermos);
-        cardConfiguracoes.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent telaConfiguracoes = new Intent(Laboratorios.this, Configuracoes.class);
-                startActivity(telaConfiguracoes);
-            }
-        });
-
-        cardRede.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent telaRede = new Intent(Laboratorios.this, Rede.class);
-                startActivity(telaRede);
-            }
-        });
-
-        cardTermos.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent telaTermos = new Intent(Laboratorios.this, Termos.class);
-                startActivity(telaTermos);
-            }
-        });
+        for(int i = 0; i < cardIds.length; i++) {
+            cards[i] = findViewById(cardIds[i]);
+            cards[i].setOnClickListener(new Laboratorios.LaboratoriosClickListener());
+        };
     }
 
-    @Override
-    public boolean onContextItemSelected(@NonNull MenuItem item) {
-        if (item.getItemId()==android.R.id.home) {
-            finish();
+    public class LaboratoriosClickListener implements View.OnClickListener {
+        @Override
+        public void onClick(View v) {
+            Intent intent;
+            switch (v.getId()) {
+                case R.id.cardSala1:
+                    intent = new Intent(v.getContext(), F108.class);
+                    break;
+                case R.id.cardSala2:
+                    intent = new Intent(v.getContext(), F109.class);
+                    break;
+                case R.id.cardSala3:
+                    intent = new Intent(v.getContext(), F111.class);
+                    break;
+                case R.id.cardSala4:
+                    intent = new Intent(v.getContext(), F113.class);
+                    break;
+                case R.id.cardConfiguracoes:
+                    intent = new Intent(v.getContext(), Configuracoes.class);
+                    break;
+                case R.id.cardRede:
+                    intent = new Intent(v.getContext(), Rede.class);
+                    break;
+                case R.id.cardTermos:
+                    intent = new Intent(v.getContext(), Termos.class);
+                    break;
+                default:
+                    intent = new Intent(v.getContext(), Laboratorios.class);
+            }
+            v.getContext().startActivity(intent);
         }
-        return super.onContextItemSelected(item);
     }
 }

@@ -21,10 +21,7 @@ public class SobreUNISAGRADO extends AppCompatActivity {
         setContentView(R.layout.activity_sobre_unisagrado);
 
         Toolbar toolbar = findViewById(R.id.toolbarSobreUNISAGRADO);
-
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowTitleEnabled(true);
+        ToolbarConf.iniciarToolbar(this, toolbar);
 
         btnSaibaMais = findViewById(R.id.btnSaibaMais);
 

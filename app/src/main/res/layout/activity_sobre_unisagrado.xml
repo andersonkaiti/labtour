@@ -36,7 +36,7 @@
             <ImageView
                 android:id="@+id/imageUNISAGRADO"
                 android:layout_width="match_parent"
-                android:layout_height="270dp"
+                android:layout_height="260dp"
                 android:background="@color/dark_red"
                 app:srcCompat="@drawable/institucional_topo_2021_ok" />
 

@@ -72,11 +72,10 @@
 
                     <ImageView
                         android:id="@+id/imageUNISAGRADO"
-                        android:layout_width="10dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginVertical="20dp"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginVertical="10dp"
                         android:layout_marginLeft="10dp"
-                        android:layout_weight="1.5"
                         app:srcCompat="@drawable/unisagrado" />
 
                     <TextView
@@ -115,11 +114,10 @@
 
                     <ImageView
                         android:id="@+id/imageLaboratorios"
-                        android:layout_width="0dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="10dp"
-                        android:layout_marginLeft="20dp"
-                        android:layout_weight="1.5"
+                        android:layout_marginLeft="10dp"
                         app:srcCompat="@drawable/computador" />
 
                     <TextView
@@ -157,10 +155,10 @@
 
                     <ImageView
                         android:id="@+id/imageCreditos"
-                        android:layout_width="0dp"
-                        android:layout_height="80dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginVertical="10dp"
-                        android:layout_weight="1.5"
+                        android:layout_marginLeft="10dp"
                         app:srcCompat="@drawable/creditos" />
 
                     <TextView
