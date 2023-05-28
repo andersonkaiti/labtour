@@ -297,17 +297,6 @@
                 android:textSize="24sp" />
 
             <TextView
-                android:id="@+id/mec"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
-                android:gravity="center"
-                android:text="Avaliação do MEC: Nota 4"
-                android:textColor="@color/black"
-                android:textSize="35sp"
-                android:textStyle="bold" />
-
-            <TextView
                 android:id="@+id/profissioanlTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
