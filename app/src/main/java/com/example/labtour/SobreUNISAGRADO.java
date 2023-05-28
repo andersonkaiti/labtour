@@ -3,6 +3,7 @@ package com.example.labtour;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -13,8 +14,6 @@ import android.widget.Button;
 
 public class SobreUNISAGRADO extends AppCompatActivity {
 
-    private Button btnSaibaMais;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,23 +22,27 @@ public class SobreUNISAGRADO extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbarSobreUNISAGRADO);
         ToolbarConf.iniciarToolbar(this, toolbar);
 
-        btnSaibaMais = findViewById(R.id.btnSaibaMais);
+        CardView cardVestibular = findViewById(R.id.cardVestibular);
+        Button btnSaibaMais = findViewById(R.id.btnSaibaMais);
+
+        cardVestibular.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String url = "https://eventos.unisagrado.edu.br/conheca-os-nossos-cursos";
+                Intent linkVestibular = new Intent(Intent.ACTION_VIEW);
+                linkVestibular.setData(Uri.parse(url));
+                startActivity(linkVestibular);
+            }
+        });
 
         btnSaibaMais.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String url = "https://unisagrado.edu.br/institucional/quem-somos";
-                Intent telaSaibaMais = new Intent(Intent.ACTION_VIEW);
-                telaSaibaMais.setData(Uri.parse(url));
-                startActivity(telaSaibaMais);
+                String url = "https://unisagrado.edu.br/graduacao/ciencia-da-computacao";
+                Intent linkSaibaMais = new Intent(Intent.ACTION_VIEW);
+                linkSaibaMais.setData(Uri.parse(url));
+                startActivity(linkSaibaMais);
             }
         });
-    }
-    @Override
-    public boolean onContextItemSelected(@NonNull MenuItem item) {
-        if (item.getItemId()==android.R.id.home) {
-            finish();
-        }
-        return super.onContextItemSelected(item);
     }
 }

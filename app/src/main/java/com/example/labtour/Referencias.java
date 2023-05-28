@@ -20,9 +20,12 @@ public class Referencias extends AppCompatActivity {
     int[] Ids = {
             R.id.cardTelaUm,
             R.id.cardTelaTres,
+            R.id.cardEthernet,
+            R.id.cardWindows,
+            R.id.cardLinux,
             R.id.cardCPU,
             R.id.cardMemoriaRAM,
-            R.id.cardHD,
+            R.id.cardSSD,
             R.id.cardGPU,
             R.id.cardMonitor,
             R.id.cardBalancoSocial,
@@ -43,14 +46,17 @@ public class Referencias extends AppCompatActivity {
         scrollView.setVerticalScrollBarEnabled(true);
 
         String[] urls = {
-                "https://storyset.com/illustration/telework/pana",
-                "https://storyset.com/illustration/shared-workspace/pana",
+                "https://storyset.com/work", //https://storyset.com/illustration/telework/pana
+                "https://storyset.com/people", //https://storyset.com/illustration/shared-workspace/pana
+                "https://www.flaticon.com/br/icones-gratis/ethernet", //https://www.flaticon.com/br/icone-gratis/ethernet_977993?term=ethernet&page=1&position=1&origin=search&related_id=977993
+                "https://www.flaticon.com/br/icones-gratis/janelas", //https://www.flaticon.com/br/icone-gratis/logotipo-do-windows_38466?term=windows&page=1&position=38&origin=search&related_id=38466
+                "https://www.flaticon.com/br/icones-gratis/linux", //https://www.flaticon.com/br/icone-gratis/linux_2333149?term=linux&page=1&position=12&origin=search&related_id=2333149
                 "https://br.freepik.com/vetores-gratis/conceito-moderno-de-hospedagem-com-design-plano_3378458.htm#page=3&query=processador%20cartoon&position=34&from_view=search&track=ais",
-                "https://www.flaticon.com/free-icons/hard-disk",
+                "https://www.flaticon.com/free-icons/ssd", //https://www.flaticon.com/free-icon/storage_10656985
                 "https://www.flaticon.com/free-icons/graphic-card",
                 "https://www.flaticon.com/free-icons/screen",
                 "https://unisagrado.edu.br/site/conteudo/12630-unisagrado-apresenta-balanco-social-2021.html",
-                "https://unisagrado.edu.br/institucional/quem-somos"
+                "https://unisagrado.edu.br/graduacao/ciencia-da-computacao"
         };
 
         for(int i = 0; i < Ids.length - 1; i++) {

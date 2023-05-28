@@ -14,7 +14,7 @@
         android:background="@color/dark_red"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
-        app:title="SOBRE O UNISAGRADO"
+        app:title="CIÊNCIA DA COMPUTAÇÃO"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -36,20 +36,345 @@
             <ImageView
                 android:id="@+id/imageUNISAGRADO"
                 android:layout_width="match_parent"
-                android:layout_height="260dp"
-                android:background="@color/dark_red"
-                app:srcCompat="@drawable/institucional_topo_2021_ok" />
+                android:layout_height="100dp"
+                android:background="@color/red_2"
+                app:srcCompat="@drawable/capa_ciencia_da_computacao" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/red_2"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/titulacao"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginVertical="10dp"
+                        app:srcCompat="@drawable/titulacao" />
+
+                    <TextView
+                        android:id="@+id/titulacaoTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Titulação"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/bacharel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Bacharel"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/modalidade"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginVertical="10dp"
+                        app:srcCompat="@drawable/modalidade" />
+
+                    <TextView
+                        android:id="@+id/modalidadeTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Modalidade"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/presencial"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Presencial"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/duracao"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginVertical="10dp"
+                        app:srcCompat="@drawable/duracao" />
+
+                    <TextView
+                        android:id="@+id/duracaoTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Duração"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/quatroAnos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="4 Anos"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/periodo"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginVertical="10dp"
+                        app:srcCompat="@drawable/periodo" />
+
+                    <TextView
+                        android:id="@+id/periodoTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Período"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/noturno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Noturno"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/area"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginVertical="10dp"
+                        app:srcCompat="@drawable/area" />
+
+                    <TextView
+                        android:id="@+id/areaTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Área"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/exatas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Exatas"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+            </LinearLayout>
 
             <TextView
-                android:id="@+id/rede"
+                android:id="@+id/cursoTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="O CURSO"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="35sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginHorizontal="150dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/yellow_1"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardVestibular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginBottom="40dp"
+                android:backgroundTint="@color/yellow_2"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingVertical="20dp"
+                    android:paddingHorizontal="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/vestibular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="VESTIBULAR"
+                        android:textStyle="bold"
+                        android:textSize="24sp"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/clique"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Clique aqui"
+                        android:textSize="24sp"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/curso"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="20dp"
-                android:gravity="center"
                 android:justificationMode="inter_word"
-                android:text="O UNISAGRADO é uma IES que possui um campus com diversos laboratórios de computação e tem como objetivo desenvolver a pesquisa e a extensão universitária, contribuindo para o desenvolvimento da região e formando profissionais capazes de atuar de forma responsável e ética em suas respectivas áreas de atuação."
-                android:textAlignment="viewStart"
+                android:text="Desafios, tecnologias e mundo digital: o universo da computação é para pessoas antenadas nesses assuntos. O bacharelado em Ciência da Computação forma profissionais capazes não só de propor soluções de problemas, mas também de inovar e promover a evolução tecnológica da computação e da informática. A formação do estudante vai além da teoria, são utilizados métodos práticos em laboratórios altamente equipados para complementar os fundamentos apresentados em disciplinas, tais como Linguagens de programação, Realidade Virtual e Inteligência Artificial."
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/mec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:gravity="center"
+                android:text="Avaliação do MEC: Nota 4"
+                android:textColor="@color/black"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/profissioanlTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="VOCÊ COMO PROFISSIONAL"
+                android:textColor="@color/black"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginHorizontal="150dp"
+                android:background="@color/yellow_1"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/profissional"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="20dp"
+                android:justificationMode="inter_word"
+                android:text="A área de atuação de um profissional de Ciência da Computação abrange a Tecnologia da Informação, que é um mercado em crescimento na atualidade. O cientista da computação poderá atuar em projetos computacionais de hardware e software: projeto de infraestrutura de tecnologia, gerenciamento e bancos de dados, análise de sistemas, segurança da informação, organização de projetos, comunicação e transmissão de dados, indústria de entretenimento através da utilização de computação gráfica, multimídia e realidade virtual. E não para por aí! A carreira acadêmica é uma ótima opção para quem se interessa por pesquisa e pela docência."
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:orientation="horizontal"
+                android:alpha="0.2"></LinearLayout>
+
+            <TextView
+                android:id="@+id/fTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="SEU FUTURO"
+                android:textColor="@color/black"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginHorizontal="150dp"
+                android:background="@color/yellow_1"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/futuro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="20dp"
+                android:justificationMode="inter_word"
+                android:text="De olho no futuro e acompanhando as tendências na indústria da informação, pode-se dizer que o mercado de atuação está cada vez mais amplo e exigente, sendo a formação profissional cada vez mais essencial. Grande parte das empresas públicas e privadas utiliza algum tipo de tecnologia para desenvolver suas atividades, necessitando de criação, programação, análise, suporte e inovação."
                 android:textColor="@color/black"
                 android:textSize="24sp" />
 
@@ -65,6 +390,7 @@
                 android:textSize="24sp"
                 android:textStyle="bold"
                 app:cornerRadius="50dp" />
+
         </LinearLayout>
     </ScrollView>
 

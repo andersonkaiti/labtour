@@ -79,13 +79,13 @@
                         app:srcCompat="@drawable/unisagrado" />
 
                     <TextView
-                        android:id="@+id/textUNISAGRADO"
+                        android:id="@+id/textCOMPUTACAO"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="2"
                         android:background="@color/dark_red"
                         android:gravity="center"
-                        android:text="SOBRE O\nUNISAGRADO"
+                        android:text="CIÊNCIA DA COMPUTAÇÃO"
                         android:textColor="@color/white"
                         android:textSize="30sp"
                         android:textStyle="bold" />

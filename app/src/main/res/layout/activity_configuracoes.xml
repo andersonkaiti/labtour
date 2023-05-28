@@ -77,14 +77,14 @@
                                 android:layout_width="100dp"
                                 android:layout_height="100dp"
                                 android:layout_marginLeft="10dp"
-                                app:srcCompat="@drawable/cpu_2" />
+                                app:srcCompat="@drawable/cpu_1" />
 
                             <TextView
                                 android:id="@+id/cpuConf"
                                 android:layout_width="wrap_content"
-                                android:layout_height="75dp"
+                                android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:layout_marginHorizontal="10dp"
+                                android:layout_marginHorizontal="20dp"
                                 android:text="Core i5 12ª Geração"
                                 android:textColor="@color/dark_red"
                                 android:textSize="24sp"
@@ -146,7 +146,7 @@
                                 android:id="@+id/gpuConf"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginHorizontal="10dp"
+                                android:layout_marginHorizontal="20dp"
                                 android:layout_weight="1"
                                 android:text="ATI Radeon 550 2GB"
                                 android:textColor="@color/dark_red"
@@ -166,7 +166,7 @@
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/cardHD"
+                    android:id="@+id/cardSSD"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
@@ -180,7 +180,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/hdTitle"
+                            android:id="@+id/ssdTitle"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:paddingVertical="10dp"
@@ -199,18 +199,18 @@
                             android:gravity="center_vertical">
 
                             <ImageView
-                                android:id="@+id/hd"
-                                android:layout_width="75dp"
-                                android:layout_height="100dp"
+                                android:id="@+id/ssd"
+                                android:layout_width="125dp"
+                                android:layout_height="75dp"
                                 android:layout_marginLeft="10dp"
-                                app:srcCompat="@drawable/hard_drive" />
+                                app:srcCompat="@drawable/storage" />
 
                             <TextView
-                                android:id="@+id/hdConf"
+                                android:id="@+id/ssdConf"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:layout_marginHorizontal="10dp"
+                                android:layout_marginHorizontal="20dp"
                                 android:text="256GB SSD NVME"
                                 android:textColor="@color/dark_red"
                                 android:textSize="24sp"
@@ -273,7 +273,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:layout_marginHorizontal="10dp"
+                                android:layout_marginHorizontal="20dp"
                                 android:layout_weight="1"
                                 android:text=" 8GB DDR4"
                                 android:textColor="@color/dark_red"
@@ -337,7 +337,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:layout_marginHorizontal="10dp"
+                                android:layout_marginHorizontal="20dp"
                                 android:text="19 polegadas"
                                 android:textColor="@color/dark_red"
                                 android:textSize="24sp"
