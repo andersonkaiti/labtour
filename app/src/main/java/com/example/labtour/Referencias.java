@@ -28,6 +28,7 @@ public class Referencias extends AppCompatActivity {
             R.id.cardSSD,
             R.id.cardGPU,
             R.id.cardMonitor,
+            R.id.cardLivro,
             R.id.cardBalancoSocial,
             R.id.cardSobreUNISAGRADO
     };
@@ -53,8 +54,9 @@ public class Referencias extends AppCompatActivity {
                 "https://www.flaticon.com/br/icones-gratis/linux", //https://www.flaticon.com/br/icone-gratis/linux_2333149?term=linux&page=1&position=12&origin=search&related_id=2333149
                 "https://br.freepik.com/vetores-gratis/conceito-moderno-de-hospedagem-com-design-plano_3378458.htm#page=3&query=processador%20cartoon&position=34&from_view=search&track=ais",
                 "https://www.flaticon.com/free-icons/ssd", //https://www.flaticon.com/free-icon/storage_10656985
-                "https://www.flaticon.com/free-icons/graphic-card",
-                "https://www.flaticon.com/free-icons/screen",
+                "https://www.flaticon.com/free-icons/graphic-card", //https://www.flaticon.com/br/icone-gratis/gpu_8900415
+                "https://www.flaticon.com/br/icones-gratis/monitor", //https://www.flaticon.com/br/icone-gratis/tela-do-monitor_3616291
+                "https://www.flaticon.com/br/icones-gratis/regras", //https://www.flaticon.com/br/icone-gratis/livro_3251356
                 "https://unisagrado.edu.br/site/conteudo/12630-unisagrado-apresenta-balanco-social-2021.html",
                 "https://unisagrado.edu.br/graduacao/ciencia-da-computacao"
         };

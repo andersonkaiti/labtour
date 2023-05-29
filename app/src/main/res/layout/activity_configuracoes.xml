@@ -328,9 +328,9 @@
                             <ImageView
                                 android:id="@+id/monitores"
                                 android:layout_width="100dp"
-                                android:layout_height="100dp"
+                                android:layout_height="90dp"
                                 android:layout_marginLeft="10dp"
-                                app:srcCompat="@drawable/tv" />
+                                app:srcCompat="@drawable/tela_do_monitor" />
 
                             <TextView
                                 android:id="@+id/monitoresConf"

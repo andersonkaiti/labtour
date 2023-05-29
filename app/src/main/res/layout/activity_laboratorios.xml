@@ -45,18 +45,19 @@
                     android:layout_height="0dp"
                     android:layout_marginBottom="10dp"
                     android:layout_weight="1"
+                    android:gravity="center"
                     android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/sala1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="270dp"
+                        android:layout_width="380dp"
+                        android:layout_height="254dp"
                         android:background="@color/dark_red"
                         app:srcCompat="@drawable/f108" />
 
                     <TextView
                         android:id="@+id/f108"
-                        android:layout_width="match_parent"
+                        android:layout_width="380dp"
                         android:layout_height="wrap_content"
                         android:background="@color/dark_red"
                         android:gravity="center"
@@ -73,18 +74,19 @@
                     android:layout_height="0dp"
                     android:layout_marginBottom="10dp"
                     android:layout_weight="1"
+                    android:gravity="center"
                     android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/sala2"
-                        android:layout_width="match_parent"
-                        android:layout_height="270dp"
+                        android:layout_width="380dp"
+                        android:layout_height="254dp"
                         android:background="@color/dark_red"
                         app:srcCompat="@drawable/f109" />
 
                     <TextView
                         android:id="@+id/f109"
-                        android:layout_width="match_parent"
+                        android:layout_width="380dp"
                         android:layout_height="wrap_content"
                         android:background="@color/dark_red"
                         android:gravity="center"
@@ -101,18 +103,19 @@
                     android:layout_height="0dp"
                     android:layout_marginBottom="10dp"
                     android:layout_weight="1"
+                    android:gravity="center"
                     android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/sala3"
-                        android:layout_width="match_parent"
-                        android:layout_height="270dp"
+                        android:layout_width="380dp"
+                        android:layout_height="254dp"
                         android:background="@color/dark_red"
                         app:srcCompat="@drawable/f111" />
 
                     <TextView
                         android:id="@+id/f111"
-                        android:layout_width="match_parent"
+                        android:layout_width="380dp"
                         android:layout_height="wrap_content"
                         android:background="@color/dark_red"
                         android:gravity="center"
@@ -128,18 +131,19 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
+                    android:gravity="center"
                     android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/sala4"
-                        android:layout_width="match_parent"
-                        android:layout_height="270dp"
+                        android:layout_width="380dp"
+                        android:layout_height="254dp"
                         android:background="@color/dark_red"
                         app:srcCompat="@drawable/f113" />
 
                     <TextView
                         android:id="@+id/f113"
-                        android:layout_width="match_parent"
+                        android:layout_width="380dp"
                         android:layout_height="wrap_content"
                         android:background="@color/dark_red"
                         android:gravity="center"
@@ -169,7 +173,7 @@
                         android:id="@+id/cardRede"
                         android:layout_width="match_parent"
                         android:layout_height="75dp"
-                        app:cardCornerRadius="25dp">
+                        app:cardCornerRadius="50dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -189,6 +193,7 @@
                                 android:id="@+id/textRede"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
+                                android:layout_marginHorizontal="20dp"
                                 android:layout_weight="2"
                                 android:background="@color/dark_red"
                                 android:gravity="center"
@@ -212,7 +217,7 @@
                         android:id="@+id/cardConfiguracoes"
                         android:layout_width="match_parent"
                         android:layout_height="75dp"
-                        app:cardCornerRadius="25dp">
+                        app:cardCornerRadius="50dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -233,6 +238,7 @@
                                 android:id="@+id/textConfiguracoes"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
+                                android:layout_marginHorizontal="20dp"
                                 android:layout_weight="2"
                                 android:background="@color/dark_red"
                                 android:gravity="center"
@@ -254,7 +260,7 @@
                         android:id="@+id/cardTermos"
                         android:layout_width="match_parent"
                         android:layout_height="75dp"
-                        app:cardCornerRadius="25dp">
+                        app:cardCornerRadius="50dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -269,12 +275,14 @@
                                 android:layout_marginVertical="10dp"
                                 android:layout_marginLeft="10dp"
                                 android:layout_weight="1"
-                                app:srcCompat="@drawable/unisagrado" />
+                                app:srcCompat="@drawable/livro"
+                                app:tint="@color/white"/>
 
                             <TextView
                                 android:id="@+id/textTermos"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
+                                android:layout_marginHorizontal="20dp"
                                 android:layout_weight="2"
                                 android:background="@color/dark_red"
                                 android:gravity="center"
