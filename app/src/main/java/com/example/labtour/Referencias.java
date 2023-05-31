@@ -33,7 +33,7 @@ public class Referencias extends AppCompatActivity {
             R.id.cardSobreUNISAGRADO
     };
 
-    CardView[] cards = new CardView[Ids.length - 1];
+    CardView[] cards = new CardView[Ids.length];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,15 +53,16 @@ public class Referencias extends AppCompatActivity {
                 "https://www.flaticon.com/br/icones-gratis/janelas", //https://www.flaticon.com/br/icone-gratis/logotipo-do-windows_38466?term=windows&page=1&position=38&origin=search&related_id=38466
                 "https://www.flaticon.com/br/icones-gratis/linux", //https://www.flaticon.com/br/icone-gratis/linux_2333149?term=linux&page=1&position=12&origin=search&related_id=2333149
                 "https://br.freepik.com/vetores-gratis/conceito-moderno-de-hospedagem-com-design-plano_3378458.htm#page=3&query=processador%20cartoon&position=34&from_view=search&track=ais",
-                "https://www.flaticon.com/free-icons/ssd", //https://www.flaticon.com/free-icon/storage_10656985
-                "https://www.flaticon.com/free-icons/graphic-card", //https://www.flaticon.com/br/icone-gratis/gpu_8900415
+                "https://br.freepik.com/vetores-gratis/modern-cpu-colecao-com-design-plano_3317258.htm#query=hard%20drive&position=13&from_view=search&track=ais",
+                "https://www.flaticon.com/br/icones-gratis/ssd", //https://www.flaticon.com/free-icon/storage_10656985
+                "https://www.flaticon.com/br/icones-gratis/placa-grafica", //https://www.flaticon.com/br/icone-gratis/gpu_8900415
                 "https://www.flaticon.com/br/icones-gratis/monitor", //https://www.flaticon.com/br/icone-gratis/tela-do-monitor_3616291
                 "https://www.flaticon.com/br/icones-gratis/regras", //https://www.flaticon.com/br/icone-gratis/livro_3251356
                 "https://unisagrado.edu.br/site/conteudo/12630-unisagrado-apresenta-balanco-social-2021.html",
                 "https://unisagrado.edu.br/graduacao/ciencia-da-computacao"
         };
 
-        for(int i = 0; i < Ids.length - 1; i++) {
+        for(int i = 0; i < Ids.length; i++) {
             cards[i] = findViewById(Ids[i]);
             String url = urls[i];
             cards[i].setOnClickListener(new ReferenciasClickListener(url));
