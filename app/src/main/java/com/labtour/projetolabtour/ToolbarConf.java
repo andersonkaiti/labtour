@@ -1,4 +1,4 @@
-package com.example.labtour;
+package com.labtour.projetolabtour;
 
 import android.view.View;
 

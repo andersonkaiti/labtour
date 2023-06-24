@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.labtour'
+    namespace 'com.labtour.projetolabtour'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.labtour"
+        applicationId "com.labtour.projetolabtour"
         minSdk 24
         targetSdk 33
         versionCode 1

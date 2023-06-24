@@ -1,4 +1,4 @@
-package com.example.labtour;
+package com.labtour.projetolabtour;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
